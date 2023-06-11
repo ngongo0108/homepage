@@ -1,0 +1,92 @@
+.footer{
+    position: absolute;
+    left: 342px;
+    top: 740px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    .epxlore {
+        margin: 17px 26px 35px 38px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 600;        
+        color: #016170;
+    }
+    .seeall{
+        margin: 0 6px 0 0;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        color: #5c5c5c;
+    }
+    .footerex{
+        display: flex;
+        justify-content: space-around;
+        
+        .popular{
+            width: 400px;
+            height: 125px;
+            flex-grow: 0;
+            margin: 35px 36px 0px 38px;
+            padding: 19px 16px 19px 32px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Chia đôi thành hai cột bằng nhau */
+                gap: 10px; 
+            }
+            li{
+                display: inline;
+                float:left;
+                p{
+                    flex-grow: 0;
+                    margin: 0 0 13px;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.61;
+                    letter-spacing: 0.07px;
+                    text-align: left;
+                    color: #5c5c5c;
+                }
+            }
+        }
+        .newest{
+            width: 400px;
+            height: 125px;
+            flex-grow: 0;
+            margin: 35px 55px 0px 36px;
+            padding: 19px 25px 19px 28px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Chia đôi thành hai cột bằng nhau */
+                gap: 10px; 
+            }
+            li{
+                display: inline;
+                p{
+                    flex-grow: 0;
+                    margin: 0 0 13px;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.61;
+                    letter-spacing: 0.07px;
+                    text-align: left;
+                    color: #5c5c5c;
+                }
+            }
+        }
+    }
+}

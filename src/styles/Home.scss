@@ -1,0 +1,388 @@
+.topProduct {
+        flex-grow: 0;
+        margin: 35px 48px 35px 38px;
+        padding: 13px 12px 23px 29px;
+        border-radius: 10px;
+        box-shadow: 0 22px 40px 0 rgba(0, 0, 0, 0.13);
+        background-color: #fff;
+        overflow: hidden;
+        position: absolute;
+        width: 900px;
+        height: 313px;
+        left: 360px;
+        top: 70px;
+        .imgTopPr {
+            width: 259px;
+            height: 259px;
+            flex-grow: 0;
+            margin: 7px 50px 11px 0;
+            padding: 217px 54px 4px 63px;
+            object-fit: contain;
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+        .PCcontent{
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            
+            .PC-Gaming-E-Power-F1650 {
+                width: 264px;
+                height: 30px;
+                flex-grow: 0;
+                padding: 20px;
+                margin: 0px 9px 5px 50px;
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 500;
+                text-align: left;
+                color: #000;
+            }
+            .Reviews {
+                width: 117px;
+                height: 21px;
+                flex-grow: 0;
+                margin: 5px 25px 15px 8px;
+                font-family: Poppins;
+                font-size: 14px;
+                color: #5c5c5c;
+            }
+            .RYZEN-3-3200G-A320M-8GB-120GB span{
+                width: 383px;
+                height: 19px;
+                flex-grow: 0;
+                margin: 15px 0 37px 0px;
+                font-family: Poppins;
+                font-size: 12.4px;
+                color: #5c5c5c;
+            }
+            .price {
+                width: 123px;
+                height: 27px;
+                flex-grow: 0;
+                margin: 8px 8px 12px 0px;
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 500;
+                color: #009393;
+            }
+    
+            .chooseColor{
+                display: flex;
+                align-items: center;
+            }
+    
+            .Color {
+                width: 44px;
+                height: 24px;
+                flex-grow: 0;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 500;
+                color: #000;
+            }
+    
+            #favcolor {
+                width: 20px;
+                height: 20px;
+                flex-grow: 0;
+                margin: 0 13px;
+                border: solid 0.5px #fff;
+                border-radius: 8px;
+            }
+    
+            //tang giam so luong 
+            .quantity-selector {
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                text-align: center;
+                width: 100px;
+                height: 32px;
+                margin-left: 20px;
+                padding: 4px 7px 5px;
+                border-radius: 26px;
+                background-color: #f2f2f2;
+                
+            }
+            .quantity-selector button{
+                text-align: center;
+                justify-content: center;
+            }
+              
+            .quantity-btn {
+                cursor: pointer;
+                width: 23px;
+                height: 23px;
+                flex-grow: 0;
+                text-align: center;
+                border: none;
+                background-color: #fff;
+            }
+              
+            .decrease-btn {
+                border-radius: 8px;
+            }
+              
+            .increase-btn {
+                border-radius: 8px;
+            }
+              
+            .quantity-input {
+                flex: 1;
+                height: 30px;
+                border: none;
+                text-align: center;
+                font-size: 16px;
+                outline: none;
+                text-decoration: none;
+                margin: 0px;
+                input[type="number"]{
+                    appearance: none;
+                }
+            }
+    
+            .heart{
+                width: 61px;
+                height: 47px;
+                flex-grow: 0;
+                margin-top: 16px ;
+                padding: 14px 20px 13px 21px;
+                border-radius: 10px;
+                border: solid 2px #009393;
+                background-color: #fff;
+            }
+    
+            .add {
+                width: 130px;
+                height: 47px;
+                flex-grow: 0;
+                margin: 16px 20px 0;
+                padding: 12px 18px 11px 19px;
+                border-radius: 10px;
+                border: solid 2px #009393;
+                color: #009393;
+                background-color: #fff;
+            }
+    
+            .buy {
+                width: 130px;
+                height: 47px;
+                flex-grow: 0;
+                padding: 12px 31px 11px 30px;
+                border-radius: 10px;
+                background-color: #009393;
+                color: white;
+            }  
+        }
+              
+}
+.bannerright{
+    width: 366px;
+    height: 222px;
+    flex-grow: 0;
+    margin: 15px;
+    padding: 0 0 11px 20px;
+    background-color: #6CD8EB;
+    border-radius: 15px;
+    position: absolute;        
+    left: 1400px;
+    top: 100px;
+
+    span {
+        width: 308px;
+        height: 84px;
+        flex-grow: 0;
+        margin: 12px 38px 71px 0;
+        font-family: Poppins;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.61;
+        letter-spacing: 0.13px;
+        text-align: left;
+        color: #fff;
+    }
+    p{
+        width: 77px;
+        height: 23px;
+        flex-grow: 0;
+        margin: 59px 8px 13px 0;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+        color: #016170;
+    }
+}
+.listPr{
+    width: 1000px;
+    height: 307px;
+    flex-grow: 0;
+    padding: 0 8px 0 0;
+    position: absolute;
+    left: 360px;
+    top: 415px;
+    cursor: pointer;
+    li {
+        display: inline-block;
+        width: 190px;
+        height: 240px;
+        flex-grow: 0;
+        margin: 26px 29px 41px 0;
+        padding: 8px 9px 10px 10px;
+        border-radius: 15px;
+        box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            flex-grow: 0;
+            margin: 4px 16px 0px 24px;
+            padding: 112px 29px 2px 25px;
+        }
+
+        span{
+            width: 138px;
+            height: 19px;
+            flex-grow: 0;
+            // margin: 13px 5px 5px 0;
+            font-family: OpenSans;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -0.14px;
+            color: #000;
+        }
+        p{
+            width: 90px;
+            height: 19px;
+            flex-grow: 0;
+            margin: 5px 53px 3px 0;
+            font-family: OpenSans;
+            font-size: 14px;
+            font-weight: 600;
+            color: #5c5c5c;
+        }
+        .start{
+            width: 20px;
+            height: 16px;
+            flex-grow: 0;
+            margin: 0 70px 0 5px;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            color: #00e0c6;
+        }
+        .icon {
+            width: 190px;
+            height: 240px;
+            flex-grow: 0;
+            padding: 8px 9px 10px 10px;
+            border-radius: 15px;
+            box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            color: #009393;
+        }
+    }
+}
+.dailyDeals{
+    width: 335px;   
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 1400px;
+    top: 409px;
+    span:first-child{
+        width: 119px;
+        height: 28px;
+        flex-grow: 0;
+        margin: 0 141px 26px 0;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #016170;
+    }
+    span{
+        width: 55px;
+        height: 21px;
+        flex-grow: 0;
+        margin: 0 6px 0 0;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        color: #5c5c5c;
+    }
+    .listright{
+        width: 335px;
+        height: 55px;
+        flex-grow: 0;
+        margin: 0 0px 30px 0;
+        display: flex;
+        justify-content: space-between;
+        .listImg{
+            width: 55px;
+            height: 55px;
+            flex-grow: 0;
+            margin: 0 14px 0 0;
+            padding: 8px 13px 8.3px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.04);
+            background-color: #fff;
+            img{
+                width: 100%;
+            }
+        }
+        .name {
+            width: 500px;
+            height: 18px;
+            flex-grow: 0;
+            margin-right: 80px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            color: #000;
+        }
+        .review{            
+            width: 149px;
+            height: 18px;
+            flex-grow: 0;
+            margin: 7px 24px 0 0;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            color: #5c5c5c;
+        }
+        .price{
+            width: 63px;
+            height: 18px;
+            flex-grow: 0;
+            margin: 6px 0 31px 26px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            color: #5c5c5c;
+        }
+        
+    }
+    
+    
+    
+}

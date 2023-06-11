@@ -1,0 +1,82 @@
+.leftbar{
+    // background-color: white;
+    // width: 300px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // overflow: scroll;
+    width: 304px;
+    height: 880px;
+    flex-grow: 0;
+    margin: 0 38px 0 0;
+    padding: 19px 16px 28px 0;
+    background-color: #fff;
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        a {
+            width: 130px;
+            height: 27px;
+            margin: 25px 74px 12px 14px;
+            cursor: pointer;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #5c5c5c;
+        }
+        a:hover{
+            width: 130px;
+            height: 27px;
+            margin: 25px 74px 12px 14px;
+            border-bottom: 5px solid green ;
+        }
+    }
+    .helpbutton {
+        width: 239px;
+        height: 220px;
+        flex-grow: 0;
+        margin: 46px 21px 0 18px;
+        border-radius: 15px;
+        background-color: #a1d2ff;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        .needhelp {
+            margin: 12px 84px 16px 82px;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 600;
+            color: #016170;
+        }
+        p {
+            margin: 16px 25px 24px 26px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.44;
+            text-align: center;
+            color: #068181;
+        }
+        input{
+            margin: 24px 49px 26px 50px;
+            padding: 10px 15px 9px 16px;
+            border-radius: 9px;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+            background-color: #d9f4ff;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            color: #016170;        
+        }
+    }
+}
