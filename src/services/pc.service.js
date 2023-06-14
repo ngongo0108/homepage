@@ -7,61 +7,25 @@ class PCService {
     this.pcRepository = PCRepository;
   }
 
-  // Get all PCs
-  async getAllPCs() {
-    try {
-      return await this.pcRepository.getAllPCs();
-    } catch (error) {
-      throw new Error('Error retrieving PCs');
-    }
+  getAllPCs() {
+    return this.pcRepository.getAllPCs();
   }
 
-  // Get a PC by ID
-  async getPCById(id) {
-    try {
-      const pc = await this.pcRepository.getPCById(id);
-      if (!pc) {
-        throw new Error('PC not found');
-      }
-      return pc;
-    } catch (error) {
-      throw new Error('Error retrieving PC');
-    }
+  getPCById(id) {
+    return this.pcRepository.getPCById(id);
   }
 
-  // Create a new PC
-  async createPC(pcData) {
-    try {
-      return await this.pcRepository.createPC(pcData);
-    } catch (error) {
-      throw new Error('Error creating PC');
-    }
+  createPC(pcData) {
+    const pcId = this.pcRepository.createPC(pcData);
+    return pcId;
   }
 
-  // Update a PC
-  async updatePC(id, pcData) {
-    try {
-      const pc = await this.pcRepository.getPCById(id);
-      if (!pc) {
-        throw new Error('PC not found');
-      }
-      await this.pcRepository.updatePC(id, pcData);
-    } catch (error) {
-      throw new Error('Error updating PC');
-    }
+  updatePC(id, pcData) {
+    this.pcRepository.updatePC(id, pcData);
   }
 
-  // Delete a PC
-  async deletePC(id) {
-    try {
-      const pc = await this.pcRepository.getPCById(id);
-      if (!pc) {
-        throw new Error('PC not found');
-      }
-      await this.pcRepository.deletePC(id);
-    } catch (error) {
-      throw new Error('Error deleting PC');
-    }
+  deletePC(id) {
+    this.pcRepository.deletePC(id);
   }
 }
 
