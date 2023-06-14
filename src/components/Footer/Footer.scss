@@ -15,11 +15,14 @@
         color: #016170;
     }
     .seeall{
-        margin: 0 6px 0 0;
+        // margin: 0 6px 0 0;
         font-family: Poppins;
         font-size: 14px;
         font-weight: 500;
         color: #5c5c5c;
+        svg{
+            margin-top: 10px;
+        }
     }
     .footerex{
         display: flex;
@@ -38,6 +41,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr; /* Chia đôi thành hai cột bằng nhau */
                 gap: 10px; 
+                margin: 0;
             }
             li{
                 display: inline;
@@ -55,6 +59,10 @@
                     text-align: left;
                     color: #5c5c5c;
                 }
+                img {
+                    width: 50px;
+                    // height: 40px;
+                }
             }
         }
         .newest{
@@ -70,6 +78,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr; /* Chia đôi thành hai cột bằng nhau */
                 gap: 10px; 
+                margin: 0;
             }
             li{
                 display: inline;
@@ -85,6 +94,10 @@
                     letter-spacing: 0.07px;
                     text-align: left;
                     color: #5c5c5c;
+                }
+                img {
+                    width: 150px;
+                    height: 100px;
                 }
             }
         }

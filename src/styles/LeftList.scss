@@ -1,23 +1,19 @@
 .leftbar{
-    // background-color: white;
-    // width: 300px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
-    // overflow: scroll;
-    width: 304px;
-    height: 880px;
     flex-grow: 0;
-    margin: 0 38px 0 0;
     padding: 19px 16px 28px 0;
-    background-color: #fff;
+    background-color: white;
+    position: absolute;
+    width: 284px;
+    height: 880px;
+    left: 0px;
+    top: 70px;
     .navbar{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
         a {
-            width: 130px;
+            width: 160px;
             height: 27px;
             margin: 25px 74px 12px 14px;
             cursor: pointer;
@@ -30,18 +26,21 @@
             letter-spacing: normal;
             text-align: left;
             color: #5c5c5c;
+            svg{
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
         }
         a:hover{
-            width: 130px;
+            width: 160px;
             height: 27px;
-            margin: 25px 74px 12px 14px;
-            border-bottom: 5px solid green ;
+            border-left: 10px solid green;
         }
     }
-    .helpbutton {
+    .helpbtn {
         width: 239px;
         height: 220px;
-        flex-grow: 0;
         margin: 46px 21px 0 18px;
         border-radius: 15px;
         background-color: #a1d2ff;
@@ -50,6 +49,18 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
+        cursor: pointer;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                width: 50px;
+                height: 33.6px;
+                margin-top: 20px;  
+            }
+        }
+        
         .needhelp {
             margin: 12px 84px 16px 82px;
             font-family: Poppins;
@@ -67,7 +78,7 @@
             color: #068181;
         }
         input{
-            margin: 24px 49px 26px 50px;
+            margin: 0px 49px 26px 50px;
             padding: 10px 15px 9px 16px;
             border-radius: 9px;
             box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
@@ -76,7 +87,8 @@
             font-size: 12px;
             font-weight: 600;
             text-align: center;
-            color: #016170;        
+            color: #016170;
+            cursor: pointer;        
         }
     }
 }

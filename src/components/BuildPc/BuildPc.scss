@@ -1,0 +1,112 @@
+.CustomPc {
+    width: 68%;
+    flex-grow: 0;
+    margin: 11px 0 51px 36px;
+    padding: 0 9.5px 33px 13px;
+    border-radius: 10px;
+    box-shadow: 0 22px 40px 0 rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    position: absolute;
+    left: 340px;
+    top: 78px;
+    .tbCustom {
+        width: 247px;
+        height: 47px;
+        flex-grow: 0;
+        margin: 0 390px 4.6px 481px;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        text-align: left;
+        color: #00e0c6;
+    }
+    .select{
+        width: 1160px;
+        // width: calc(1200*1920*100);
+        height: 63px;
+        flex-grow: 0;
+        margin: 7.4px 1.5px 18.3px 20px;
+        padding: 7px 390px 6.7px 13px;
+        border-radius: 10px;
+        box-shadow: 0 22px 40px 0 rgba(0, 0, 0, 0.13);
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        .selectName {
+            width: 130px;
+            height: 46.6px;
+            flex-grow: 0;
+            margin: 2.8px 97px 0 0;
+            padding: 11.9px 18px 10.9px 19px;
+            border-radius: 10px;
+            border: solid 2px #009393;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            color: #009393;
+        }
+        .select6{
+            width: 182px;
+            height: 47px;
+            flex-grow: 0;
+            margin: 1px 45px 0 0;
+            padding: 12.1px 0 6.6px 2px;
+            border-radius: 10px;
+            border: solid 2px #009393;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            color: #009393;
+        }
+        .selectDt {
+            width: 504px;
+            height: 44.4px;
+            margin-top: 0px;
+            padding: 5.4px 190px 5.4px 0;
+            border-radius: 10px;
+            background-color: #009393;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            svg {
+                width: 50px;
+                height: 33.6px;
+                margin-top: 5px;                
+            }
+        }
+    }
+    .buy {
+        cursor: pointer;
+        width: 267px;
+        height: 52px;
+        flex-grow: 0;
+        margin: 0px 35.5px 0 835px;
+        padding: 11px 81px 15px 103px;
+        border-radius: 10px;
+        background-color: #009393;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.16px;
+        text-align: left;
+        color: #fff;
+    }
+}

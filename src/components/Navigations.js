@@ -1,17 +1,16 @@
 import '../styles/Navigations.scss'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import {Icon } from 'react-materialize'
-
-// import EmailIcon from '@mui/icons-material/Email';
-// import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import avatar from '../assets/images/7.png'
+import image from '../assets/images/Logo.png'
+import { FiMail } from 'react-icons/fi'
+import { TbBellRinging } from 'react-icons/tb'
 const Navigations = () => {
     return (               
         <div className='nav'>
             <div className='navleft'>
-                <img className='imgleft' src='./assets/img/logo.jpg' alt='pc'/>
+                <img className='imgleft' src={image} alt='pc'/>
                 <a className='logo' href>                    
-                    <span>PC</span> E-Commerce
+                    <span>FPC</span>
                 </a>                
             </div>
             <div className='navmiddle'>
@@ -21,17 +20,16 @@ const Navigations = () => {
             </div>
             <div className='navright'>
                 <a href className='btn'>
-                    {/* <EmailIcon/> */}
+                    <span><FiMail/></span>
                     {/* <span className='badge'>0</span> */}
                 </a>
                 <a href className='btn'>
-                    {/* <NotificationsActiveIcon/> */}
+                    <span><TbBellRinging/></span>
                     {/* <span className='badge'>0</span> */}
                 </a>
-                <a href className='btn'>
-                    {/* <NotificationsActiveIcon/> */}
-                    <img scr='' alt='pc'/>
-                </a>
+                {/* <a href className='btn'> */}
+                    <img className='avatar' src={avatar} alt='pc'/>
+                {/* </a> */}
             </div>
         </div>
     )

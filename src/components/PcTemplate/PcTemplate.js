@@ -1,10 +1,16 @@
 // import { Link } from 'react-router-dom'
 // import { useParams } from 'react-router-dom'
 import React from 'react'
-import '../styles/Home.scss'
+import './PcTemplate.scss'
+
+// import image1 from '../../assets/img/PC.png'
+import {AiFillStar} from 'react-icons/ai'
+import {AiFillPlusCircle} from 'react-icons/ai'
+import { AiOutlineArrowRight } from 'react-icons/ai'
+
 import { useState } from 'react'
 
-const Home = () => {
+const PcTemplate = () => {
     const [quantity, setQuantity] = useState(1);
 
   const decreaseQuantity = (event) => {
@@ -28,16 +34,16 @@ const Home = () => {
         <div>
             <div className='topProduct'>
             <form>
-                <img className='imgTopPr' scr='assets/img/2.png' alt='PC'/>
+                <img className='imgTopPr' scr='' alt='PC'/>
                 <div className='PCcontent'>
                     <div>
                         <span className="PC-Gaming-E-Power-F1650">PC Gaming E-Power F1650</span>
                         <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                            <span class="starvote"><AiFillStar/></span>
+                            <span class="starvote"><AiFillStar/></span>
+                            <span class="starvote"><AiFillStar/></span>
+                            <span class="starvote"><AiFillStar/></span>
+                            <span class="starvote"><AiFillStar/></span>
                             <span class="Reviews">(2000+ Reviews)</span>
                         </p>
                         <p className="RYZEN-3-3200G-A320M-8GB-120GB">RY2Zen 3 3200G/ A320M/ 8GB/ 120GB</p>
@@ -55,9 +61,7 @@ const Home = () => {
                             <button className="quantity-btn increase-btn" onClick={(event)=>{increaseQuantity(event)}}>+</button>
                         </div>
                     </div>
-                    <div>
-                        <input className = 'heart' type='button' value='heart'/>
-                        <input className = 'add' type='button' value='Add to cart'/>
+                    <div className='btnbuy'>
                         <input className = 'buy' type='button' value='Buy now'/>
                     </div>
                 
@@ -69,7 +73,7 @@ const Home = () => {
         <div className='bannerright'>
             <img src='' alt=''/>
             <span>Summer PC from top brands</span>
-            <p>Buy it now</p>
+            <p>Buy it now <AiOutlineArrowRight/></p>
         </div>
         
         {/* list product */}
@@ -79,29 +83,29 @@ const Home = () => {
                     <img src='' alt='pc'></img>
                     <span>123456789</span>
                     <p>Price $....</p>
-                    <span className='start'>start 4.9</span>
-                    <span className='icon'>icon</span>
+                    <span className='start'><AiFillStar/> 4.9</span>
+                    <span className='icon'><AiFillPlusCircle/></span>
                 </li>
                 <li>
                     <img src='' alt='pc'></img>
                     <span>123456789</span>
                     <p>Price $....</p>
-                    <span className='start'>start 4.9</span>
-                    <span className='icon'>icon</span>
+                    <span className='start'><AiFillStar/> 4.9</span>
+                    <span className='icon'><AiFillPlusCircle/></span>
                 </li>
                 <li>
                     <img src='' alt='pc'></img>
                     <span>123456789</span>
                     <p>Price $....</p>
-                    <span className='start'>start 4.9</span>
-                    <span className='icon'>icon</span>
+                    <span className='start'><AiFillStar/> 4.9</span>
+                    <span className='icon'><AiFillPlusCircle/></span>
                 </li>
                 <li>
                     <img src='' alt='pc'></img>
                     <span>123456789</span>
                     <p>Price $....</p>
-                    <span className='start'>start 4.9</span>
-                    <span className='icon'>icon</span>
+                    <span className='start'><AiFillStar/> 4.9</span>
+                    <span className='icon'><AiFillPlusCircle/></span>
                 </li>
             </ul>
         </div>
@@ -109,7 +113,7 @@ const Home = () => {
         {/* daily deals */}
         <div className='dailyDeals'>
             <span>Daily Deals</span>
-            <span>View all</span>
+            <span>View all <AiOutlineArrowRight/></span>
             <div>
                 <ul>
                     <li className ='listright'>
@@ -137,4 +141,4 @@ const Home = () => {
         
     )
 }
-export default Home
+export default PcTemplate
