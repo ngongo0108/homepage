@@ -19,11 +19,9 @@ const LeftList =() => {
             
             <div className='leftbar'>
                 <div className='navbar'>
-                    <Link to='/'> <BiHomeHeart/>Build PC</Link>
-                    <Link to="/Explore" > <MdOutlineExplore className="icon"/>Explore</Link>
-                    <Link to='/PcTemplate'> <HiComputerDesktop className="icon"/>PC Template</Link>
-                    <Link to='/Cart' > <FiShoppingCart className="icon"/>Cart</Link>
-                    <Link to='/Selling'> <MdPayments className="icon"/>Selling</Link>
+                    <Link to='/BuildPc'> <BiHomeHeart/>Build PC</Link>
+                    <Link to='/'> <HiComputerDesktop className="icon"/>PC Template</Link>
+                    <Link to='/Cart'> <FiShoppingCart className="icon"/>Cart</Link>
                     <Link to='/Profile'> <CgProfile className="icon"/>Profle</Link>
                     <Link to='/PurchaseHistory'> <TbHistory className="icon"/>Purchase History</Link>
                     <Link to='/ContactUs'> <BiMessageDetail className="icon"/>Contact us</Link>

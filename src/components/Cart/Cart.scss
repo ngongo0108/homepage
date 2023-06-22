@@ -1,0 +1,218 @@
+.purchasePage{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    hr{
+        color: black;
+        width: 80%;
+        size: 5px;
+        align-items: center;
+        margin: 30px;
+    }
+    .customerInfor{
+        display: flex;
+        flex-direction: column;        
+        text-align: left;
+        margin-left: 20px;
+        .nameTable{
+            width: 700px;
+            h4{
+                font-family: Poppins;
+                // font-size: 32px;
+                font-weight: 500;
+                color: #000;
+                margin: 45px 0px;
+            }
+            
+        }
+        .container{
+            margin: 0;
+            label{
+                width: 382.4px;
+                flex-grow: 0;
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 500;
+                color: #000;
+            }
+            input{
+                width: 600px;
+            }
+        }
+    }
+    .Pcpayment{
+        display: flex;
+        flex-direction: column;  
+        background-color: #DBDBDB;
+        padding: 20px;
+        border-radius: 10px;
+        .inforPc{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 785px;
+            height: 173.6px;
+            flex-grow: 0;
+            // margin: 63.8px 1.4px 553.6px 0;
+            // padding: 20px 49px 20.6px 56px;
+            .imgpc{
+                width: 160px;
+                height: 133px;
+                margin: 10px;
+                mix-blend-mode: multiply;
+                img{
+                    width: 100%;
+                }
+            }
+            .contentPc{
+                text-align: left;
+                p{
+                    margin: 0px;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #000;
+                }
+                p:last-child{
+                    width: 250px;
+                    font-family: Poppins;
+                    font-size: 12.4px;
+                    text-align: left;
+                    color: #5c5c5c;
+                }
+            }
+            .price{
+                display: flex;
+                flex-direction: column;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: left;                
+                span{
+                    color: #f70000;
+                }
+            }
+            
+        }
+        .payment{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4{
+                text-align: center;
+                margin: 0px;
+                -webkit-text-stroke: 1px #000;
+                font-family: Poppins;
+                font-size: 32px;
+                font-weight: 500;
+                letter-spacing: 0.32px;
+                color: #fff;
+            }
+            .imgPm{
+                width: 70%;
+                display: flex;
+                justify-content: space-evenly; 
+                margin: 26.3px 0px;
+                .im{
+                    border: 2px solid black;
+                    border-radius: 8px;
+                    width: 131px;
+                    height: 131px;
+                    
+                }
+                img{                    
+                    width: 100%;                    
+                }
+            }
+            a {
+                display: block;
+                width: 180px;
+                height: 71.2px;                
+                border-radius: 10px;
+                border: none;
+                background-color: #75e573;                  
+                font-family: Poppins;
+                font-size: 32px;
+                font-weight: 500;
+                letter-spacing: 0.32px;
+                color: #fff;                  
+            }
+            button:hover{
+                background-color: #a6f2a5; 
+            }
+
+        }
+    }
+    /* pop-up */
+    .overlay {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+        .popup {
+            width: 1251px;
+            height: 694px;
+            margin: 45px 79px 19px 170px;
+            padding: 12px 20px 91px 16px;
+            border-radius: 10px;
+            box-shadow: 0 22px 40px 0 rgba(0, 0, 0, 0.13);
+            border: solid 1px #000;
+            background-color: #fff;
+            position: relative;
+            transition: all 0.165s ease-in-out;
+            .navhead {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 20px;
+                p {
+                    margin: 10px 0px;
+                    font-family: Poppins;
+                    font-size: 32px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: 0.32px;
+                    color: #068181;
+                }
+                .search {
+                    width: 410px;
+                    height: 45px;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-color: #fff;
+                }
+            }
+            
+            .close {
+                // position: absolute;
+                // top: 20px;
+                // right: 30px;
+                transition: all 200ms;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #333;
+            }
+            .close:hover {
+                color: #06D85F;
+            }
+        }
+    }
+}

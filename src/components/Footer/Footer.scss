@@ -8,7 +8,8 @@
     letter-spacing: normal;
     text-align: left;
     .epxlore {
-        margin: 17px 26px 35px 38px;
+        // margin: 0px 26px 15px 38px;
+        margin-right: 38px;
         font-family: Roboto;
         font-size: 24px;
         font-weight: 600;        
@@ -32,7 +33,7 @@
             width: 400px;
             height: 125px;
             flex-grow: 0;
-            margin: 35px 36px 0px 38px;
+            margin: 15px 36px 0px 38px;
             padding: 19px 16px 19px 32px;
             border-radius: 10px;
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
@@ -69,7 +70,7 @@
             width: 400px;
             height: 125px;
             flex-grow: 0;
-            margin: 35px 55px 0px 36px;
+            margin: 15px 55px 0px 36px;
             padding: 19px 25px 19px 28px;
             border-radius: 10px;
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);

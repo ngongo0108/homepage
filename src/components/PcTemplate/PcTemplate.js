@@ -3,142 +3,179 @@
 import React from 'react'
 import './PcTemplate.scss'
 
-// import image1 from '../../assets/img/PC.png'
+
 import {AiFillStar} from 'react-icons/ai'
 import {AiFillPlusCircle} from 'react-icons/ai'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
 import { useState } from 'react'
-
+import liPc from '../../assets/images/37.png'
+import topPc from '../../assets/images/pc1.png'
+// import { pcvalid } from './dbpc'
+import pc from '../../assets/images/42.png'
+import Modal from '../../model/DetailModel'
 const PcTemplate = () => {
-    const [quantity, setQuantity] = useState(1);
-
-  const decreaseQuantity = (event) => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    } else setQuantity(0);
-    event.preventDefault();
-  };
-
-  const increaseQuantity = (event) => {
-    setQuantity(quantity + 1);
-    event.preventDefault();
-  };
-
-  const handleInputChange = (event) => {
-    const value = parseInt(event.target.value);
-    setQuantity(value);
-    event.preventDefault();
-  };
-    return (
+    const [openModal, setOpenModal] = useState(false);
+    return (        
         <div>
-            <div className='topProduct'>
-            <form>
-                <img className='imgTopPr' scr='' alt='PC'/>
-                <div className='PCcontent'>
-                    <div>
-                        <span className="PC-Gaming-E-Power-F1650">PC Gaming E-Power F1650</span>
-                        <p>
-                            <span class="starvote"><AiFillStar/></span>
-                            <span class="starvote"><AiFillStar/></span>
-                            <span class="starvote"><AiFillStar/></span>
-                            <span class="starvote"><AiFillStar/></span>
-                            <span class="starvote"><AiFillStar/></span>
-                            <span class="Reviews">(2000+ Reviews)</span>
-                        </p>
-                        <p className="RYZEN-3-3200G-A320M-8GB-120GB">RY2Zen 3 3200G/ A320M/ 8GB/ 120GB</p>
-                        <p className='price'>Price $ 349.95</p>
-                    </div>              
-                    <div className='chooseColor'>
-                        <label className='Color'>Color</label>
-                        <input type='color' id='favcolor' name='blue' value='#4BA3E5'/>
-                        <input type='color' id='favcolor' name='bluegreen' value='#00AD97'/>
-                        <input type='color' id='favcolor' name='pink' value='#E27373'/>
-                        <input type='color' id='favcolor' name='green' value='#75E573'/>
-                        <div className="quantity-selector">
-                            <button className="quantity-btn decrease-btn" onClick={(event)=>{decreaseQuantity(event)}}>-</button>
-                            <input className="quantity-input" type='number' value={quantity} onChange={(event)=>{handleInputChange(event)}} />
-                            <button className="quantity-btn increase-btn" onClick={(event)=>{increaseQuantity(event)}}>+</button>
-                        </div>
-                    </div>
-                    <div className='btnbuy'>
-                        <input className = 'buy' type='button' value='Buy now'/>
-                    </div>
-                
-                </div>                
-            </form>  
-        </div>
-        
-        {/* banner right */}
-        <div className='bannerright'>
-            <img src='' alt=''/>
-            <span>Summer PC from top brands</span>
-            <p>Buy it now <AiOutlineArrowRight/></p>
-        </div>
-        
-        {/* list product */}
-        <div className='listPr'>
-            <ul>
-                <li>
-                    <img src='' alt='pc'></img>
-                    <span>123456789</span>
-                    <p>Price $....</p>
-                    <span className='start'><AiFillStar/> 4.9</span>
-                    <span className='icon'><AiFillPlusCircle/></span>
-                </li>
-                <li>
-                    <img src='' alt='pc'></img>
-                    <span>123456789</span>
-                    <p>Price $....</p>
-                    <span className='start'><AiFillStar/> 4.9</span>
-                    <span className='icon'><AiFillPlusCircle/></span>
-                </li>
-                <li>
-                    <img src='' alt='pc'></img>
-                    <span>123456789</span>
-                    <p>Price $....</p>
-                    <span className='start'><AiFillStar/> 4.9</span>
-                    <span className='icon'><AiFillPlusCircle/></span>
-                </li>
-                <li>
-                    <img src='' alt='pc'></img>
-                    <span>123456789</span>
-                    <p>Price $....</p>
-                    <span className='start'><AiFillStar/> 4.9</span>
-                    <span className='icon'><AiFillPlusCircle/></span>
-                </li>
-            </ul>
-        </div>
-
-        {/* daily deals */}
-        <div className='dailyDeals'>
-            <span>Daily Deals</span>
-            <span>View all <AiOutlineArrowRight/></span>
-            <div>
-                <ul>
-                    <li className ='listright'>
-                        <img className='listImg' src='' alt='pc'></img>
-                        <span>
-                            <p className='name'>123456789</p>
-                            <p className='review'>...reviews .... orders</p>
-                        </span>                        
-                        <span className='price'>Price $....</span>
-                        
-                    </li>
-                    <li className ='listright'> 
-                        <img className='listImg' src='' alt='pc'></img>
-                        <span>
-                            <p className='name'>123456789987456321</p>
-                            <p className='review'>...reviews .... orders</p>
-                        </span>                        
-                        <span className='price'>Price $....</span>
-                    </li>
-                </ul>
+        {/* list product */}                
+            <div className = 'row'>
+                <div className=' col-md-8'>
+                    <h4>PC BUILD IN</h4>
+                    <p>See all <AiOutlineArrowRight/></p>
+                </div>            
             </div>
-        </div>
-        
-        </div>
-        
+            <div className='row'>
+            <div data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+                {/* {pcvalid.map((avalablePc) => (
+                    <div className='col-md-3'>
+                    <img className= 'imgPr' src={avalablePc.img} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>{avalablePc.name}</p>
+                        <p className='pricePr'>Price {avalablePc.price}</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> {avalablePc.vote}</span>
+                            <span><AiFillPlusCircle style={{width:"25px", color: "#009393"}}/></span>
+                        </div>                            
+                    </div>                        
+                </div>
+                ))} */}
+                
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={liPc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>PC Gaming E-Power F1650</p>
+                        <p className='pricePr'>Price $349.95</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={topPc} alt='pc'/>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+            </div>
+            </div>
+
+            <div className = 'row'>
+                <div className=' col-md-8'>
+                    <h4>AVAILABLE PC</h4>
+                    <p>See all <AiOutlineArrowRight/></p>
+                </div>            
+            </div>
+            <div className='row'>
+            <div data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+                <div className='col-md-3'>            
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                <div className='col-md-3'>
+                    <img className= 'imgPr' src={pc} alt='pc'></img>
+                    <div className='contentPr'>
+                        <p className='namePr'>123456789</p>
+                        <p className='pricePr'>Price $....</p>
+                        <div className='iconPr'>
+                            <span><AiFillStar style={{width:"25px", color: "#f8e329"}}/> 4.9</span>
+                            <button onClick = {() => {setOpenModal(true);}}>Detail</button>
+                            { openModal && <Modal closeModel= {setOpenModal} />}
+                        </div>                            
+                    </div>                        
+                </div>
+                </div>
+                
+            </div>      
+        </div>        
     )
 }
 export default PcTemplate

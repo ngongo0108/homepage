@@ -2,9 +2,9 @@ import './App.css';
 
 import Routter from '../routes/Routter';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Routter/>
     </div>    
   );

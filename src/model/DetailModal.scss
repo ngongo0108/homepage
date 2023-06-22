@@ -1,0 +1,90 @@
+.modalBackground{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modelContainer{
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 22px 40px 0 rgba(0, 0, 0, 0.13);
+        border: solid 1px #000;
+        background-color: #fff;
+        display: flex; 
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: end;  
+        width: 1000px;
+        height: 600px;
+        .closebtn{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                height: 50px;
+                background-color: white;
+                border: none;
+                font-size: 25px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: crimson;
+                color: white;
+            }
+        }
+
+        .modalBody{
+            // flex: 50%;
+            width: 950px;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 20px;
+            // font-size: 1.7rem;
+            
+            .imgP{
+                width: 40%; 
+                img{
+                    width: 100%;
+                } 
+            }
+            .content{
+                width: 60%;
+                margin-left: 20px;
+                .namePc{
+                    width: 500px;
+                    height: 45px;
+                    font-family: Poppins;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .footer{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                width: 150px;
+                height: 45px;
+                margin: 10px;
+                border: none;
+                background-color: cornflowerblue;
+                color: white;
+                border-radius: 8px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            #canceBtn{
+                background-color: crimson;
+            }
+        }
+    }
+        
+    
+}
